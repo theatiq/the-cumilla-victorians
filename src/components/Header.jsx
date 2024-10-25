@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 import { AiOutlineDollar } from "react-icons/ai";
 const Header = () => {
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="navbar flex items-center mb-5">
         <div className="flex-1">
           <img src={logo} alt="" />
