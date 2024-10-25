@@ -9,7 +9,16 @@ import Subscription from "./components/Subscription";
 
 function App() {
   const [coin, setCoin] = useState(0);
+  const [current, setCurrent] = useState(true);
   const [selected, setSelected] = useState([]);
+
+  const handleCurrent = (status) => {
+    if (status === "available") {
+      setCurrent(true);
+    } else {
+      setCurrent(false);
+    }
+  };
 
   const totalCoin = () => {
     const newCoin = coin + 1000000;
@@ -48,9 +57,14 @@ function App() {
     <div>
       <Header coin={coin}></Header>
       <Banner totalCoin={totalCoin}></Banner>
-      <Buttons></Buttons>
-      <Players handleSelected={handleSelected}></Players>
-      <Selects selected={selected} handleDelete={handleDelete}></Selects>
+      <Buttons handleCurrent={handleCurrent}></Buttons>
+      {current ? (
+        <Players handleSelected={handleSelected}></Players>
+      ) : (
+        <Selects selected={selected} handleDelete={handleDelete}></Selects>
+      )}
+      {/* <Players handleSelected={handleSelected}></Players>
+      <Selects selected={selected} handleDelete={handleDelete}></Selects> */}
       <Subscription></Subscription>
       <Footer></Footer>
     </div>

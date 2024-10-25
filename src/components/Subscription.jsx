@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscription = () => {
   return (
-    <div className="w-11/12 mx-auto top-28 relative z-10">
+    <div className="w-11/12 mx-auto top-32 relative z-10 border rounded-lg p-5">
       <div
         className="min-h-48 rounded-lg overflow-hidden w-full"
         style={{
