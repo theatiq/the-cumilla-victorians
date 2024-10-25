@@ -23,6 +23,12 @@ function App() {
       alert("Already Selected");
     } else {
       const newlySelected = [...selected, player];
+      if (coin >= player.price) {
+        const remainingCoin = coin - player.price;
+        setCoin(remainingCoin);
+      } else {
+        return alert("Please Credit Coin");
+      }
 
       if (selected.length > 5) {
         alert("You have already selected maximum number of players");

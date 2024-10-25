@@ -19,7 +19,7 @@ const Selects = ({ selected, handleDelete }) => {
             </div>
             <div>
               <h1 className="text-xl font-bold">{player.name}</h1>
-              <p>{player.batting}</p>
+              <p>{player.role}</p>
             </div>
           </div>
           <div

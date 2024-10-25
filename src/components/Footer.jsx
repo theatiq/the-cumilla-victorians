@@ -3,7 +3,7 @@ import logoFooter from "../assets/logo-footer.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-blue-950 text-base-content border-base-300 border-t py-4 place-content-center">
+      <footer className="footer bg-blue-950 text-base-content border-base-300 border-t py-4 place-content-center pt-40">
         <img src={logoFooter} alt="" />
       </footer>
       <footer className="footer bg-blue-950 text-base-content p-10 flex justify-between">
