@@ -10,6 +10,7 @@ import Subscription from "./components/Subscription";
 function App() {
   const [coin, setCoin] = useState(0);
   const [selected, setSelected] = useState([]);
+
   const totalCoin = () => {
     const newCoin = coin + 1000000;
     setCoin(newCoin);
@@ -22,8 +23,20 @@ function App() {
       alert("Already Selected");
     } else {
       const newlySelected = [...selected, player];
-      setSelected(newlySelected);
+
+      if (selected.length > 5) {
+        alert("You have already selected maximum number of players");
+      } else {
+        return setSelected(newlySelected);
+      }
     }
+  };
+
+  const handleDelete = (player) => {
+    const remainingPlayer = selected.filter(
+      (p) => p.player_id !== player.player_id
+    );
+    setSelected(remainingPlayer);
   };
   return (
     <div>
@@ -31,7 +44,7 @@ function App() {
       <Banner totalCoin={totalCoin}></Banner>
       <Buttons></Buttons>
       <Players handleSelected={handleSelected}></Players>
-      <Selects selected={selected}></Selects>
+      <Selects selected={selected} handleDelete={handleDelete}></Selects>
       <Subscription></Subscription>
       <Footer></Footer>
     </div>

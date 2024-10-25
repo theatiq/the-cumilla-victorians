@@ -1,10 +1,10 @@
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
-const Selects = ({ selected }) => {
+const Selects = ({ selected, handleDelete }) => {
   return (
     <div className="w-11/12 mx-auto mb-20">
       <h1 className="text-4xl font-bold mb-5">
-        Selected Players {selected.length}/6
+        Selected Players: {selected.length}/6
       </h1>
       {selected.map((player) => (
         // eslint-disable-next-line react/jsx-key
@@ -22,7 +22,10 @@ const Selects = ({ selected }) => {
               <p>{player.batting}</p>
             </div>
           </div>
-          <div className="text-red-300 text-xl cursor-pointer">
+          <div
+            onClick={() => handleDelete(player)}
+            className="text-red-300 text-xl cursor-pointer"
+          >
             <RiDeleteBin6Fill />
           </div>
         </div>
