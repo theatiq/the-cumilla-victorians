@@ -4,7 +4,7 @@ const Selects = ({ selected, handleDelete, handleCurrent }) => {
   return (
     <div className="w-11/12 mx-auto mb-20">
       <h1 className="text-4xl font-bold mb-5">
-        Selected Players: {selected.length}/6
+        Selected Players: ({selected.length})/6
       </h1>
       {selected.map((player) => (
         // eslint-disable-next-line react/jsx-key

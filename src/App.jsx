@@ -57,7 +57,7 @@ function App() {
     <div>
       <Header coin={coin}></Header>
       <Banner totalCoin={totalCoin}></Banner>
-      <Buttons handleCurrent={handleCurrent}></Buttons>
+      <Buttons handleCurrent={handleCurrent} selected={selected}></Buttons>
       {current ? (
         <Players handleSelected={handleSelected}></Players>
       ) : (
