@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import { AiOutlineDollar } from "react-icons/ai";
-const Header = () => {
+const Header = ({ coin }) => {
   return (
     <div className="w-11/12 mx-auto">
       <div className="navbar flex items-center mb-5">
@@ -13,9 +13,9 @@ const Header = () => {
           <a href="">Teams</a>
           <a href="">Schedules</a>
           <div className="flex gap-2 items-center">
-            <span>0</span>
+            <span>{coin}</span>
             <button>Coin</button>
-            <AiOutlineDollar className="text-orange-600 text-2xl"/>
+            <AiOutlineDollar className="text-orange-600 text-2xl" />
           </div>
         </div>
       </div>

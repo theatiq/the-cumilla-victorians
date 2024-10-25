@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
-const Players = () => {
+const Players = ({ handleSelected }) => {
   const [players, setPlayers] = useState([]);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);
-  console.log(players);
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="text-4xl font-bold mb-5">Available Players</h1>
@@ -44,7 +43,12 @@ const Players = () => {
               </div>
               <div className="flex items-center justify-between text-xl font-bold">
                 <p>Price: ${player.price} </p>
-                <button className="btn btn-primary">Choose Player</button>
+                <button
+                  onClick={() => handleSelected(player)}
+                  className="btn btn-primary"
+                >
+                  Choose Player
+                </button>
               </div>
             </div>
           </div>

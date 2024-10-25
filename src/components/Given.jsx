@@ -86,3 +86,25 @@ const Players = () => {
 };
 
 export default Players;
+
+
+// Selected Players
+
+<div className="flex items-center justify-between border rounded-lg p-5 mb-5">
+<div className="flex items-center justify-between gap-5">
+  <div>
+    <img
+      src="https://i.ibb.co.com/brLPPNQ/1-Tamim.jpg"
+      alt=""
+      className="h-[75px] w-full rounded-2xl"
+    />
+  </div>
+  <div>
+    <h1 className="text-xl font-bold">Name</h1>
+    <p>Right-Hand-Bat</p>
+  </div>
+</div>
+<div className="text-red-300 text-xl cursor-pointer">
+  <RiDeleteBin6Fill />
+</div>
+</div>

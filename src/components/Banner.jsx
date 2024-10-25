@@ -1,4 +1,4 @@
-const Banner = () => {
+const Banner = ({ totalCoin }) => {
   return (
     <div className="w-11/12 mx-auto">
       <div
@@ -17,7 +17,9 @@ const Banner = () => {
               Assemble Your Ultimate Dream 11 Cricket Team
             </h1>
             <p className="mb-5 text-xl">Beyond Boundaries Beyond Limits</p>
-            <button className="btn btn-primary">Claim Free Credit</button>
+            <button onClick={() => totalCoin()} className="btn btn-primary">
+              Claim Free Credit
+            </button>
           </div>
         </div>
       </div>
