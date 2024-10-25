@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Buttons from "./components/Buttons";
 import Header from "./components/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="w-11/12 mx-auto">
       <Header></Header>
       <Banner></Banner>
+      <Buttons></Buttons>
     </div>
   );
 }
