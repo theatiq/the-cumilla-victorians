@@ -1,21 +1,40 @@
+import { FaUser } from "react-icons/fa";
+import { FaFlag } from "react-icons/fa";
 const Players = () => {
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="text-4xl font-bold mb-5">Available Players</h1>
       <div className="grid grid-cols-3 mb-20">
-        <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="px-10 pt-10">
+        <div className="card border rounded-lg">
+          <figure className="px-5 pt-5">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
-              className="rounded-xl"
+              src="https://i.ibb.co/1vs1y40/1-Tamim.jpg"
+              alt="Player"
+              className="rounded-xl h-full w-full object-cover"
             />
           </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions">
-              <button className="btn btn-primary">Buy Now</button>
+          <div className="card-body">
+            <div className="flex justify-start items-center gap-5">
+              <FaUser />
+              <h2 className="card-title text-2xl font-bold">Tamim Iqbal</h2>
+            </div>
+            <div className="flex items-center justify-between text-xl ">
+              <div className="flex items-center gap-5">
+                <FaFlag />
+                <h1 className="font-bold">Bangladesh</h1>
+              </div>
+              <div>
+                <p className="font-bold">Batter</p>
+              </div>
+            </div>
+            <p className="text-xl font-bold">Ratings</p>
+            <div className="flex items-center justify-between text-xl font-bold">
+              <h1>Left-Hand-Bat</h1>
+              <h1>N/A</h1>
+            </div>
+            <div className="flex items-center justify-between text-xl font-bold">
+              <p>Price: $500000 </p>
+              <button className="btn btn-primary">Choose Player</button>
             </div>
           </div>
         </div>
