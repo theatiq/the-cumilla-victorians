@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import Buttons from "./components/Buttons";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Players from "./components/Players";
 import Subscription from "./components/Subscription";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Buttons></Buttons>
+      <Players></Players>
       <Subscription></Subscription>
       <Footer></Footer>
     </div>

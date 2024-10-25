@@ -1,0 +1,123 @@
+[
+    {
+      "player_id": 1,
+      "name": "Tamim Iqbal",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/1vs1y40/1-Tamim.jpg",
+      "role": "Batter",
+      "batting": "Left-Hand-Bat",
+      "bowling": "N/A",
+      "price": 500000
+    },
+    {
+      "player_id": 2,
+      "name": "Imrul Kayes",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/v3FpcHv/2-Imrul.jpg",
+      "role": "Batter",
+      "batting": "Left-Hand-Bat",
+      "bowling": "N/A",
+      "price": 300000
+    },
+    {
+      "player_id": 3,
+      "name": "Nazmul Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/3pLz5rr/3-Nazmul.jpg",
+      "role": "Batter",
+      "batting": "Right-Hand-Bat",
+      "bowling": "N/A",
+      "price": 450000
+    },
+    {
+      "player_id": 4,
+      "name": "Mushfiqur Rahim",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/VVxPPMR/4-Mushfiq.jpg",
+      "role": "Wk-Batter",
+      "batting": "Right-Hand-Bat",
+      "bowling": "N/A",
+      "price": 500000
+    },
+    {
+      "player_id": 5,
+      "name": "Mahamudullah",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/kgZZkrq/5-Mahamudullah.jpg",
+      "role": "All-rounder",
+      "batting": "Right-Hand-Bat",
+      "bowling": "Right-Arm-Off-Break",
+      "price": 500000
+    },
+    {
+      "player_id": 6,
+      "name": "Towhid Hridoy",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/6YG3pFr/6-Towhid-Hridoy.jpg",
+      "role": "Batter",
+      "batting": "Right-Hand-Bat",
+      "bowling": "N/A",
+      "price": 350000
+    },
+    {
+      "player_id": 7,
+      "name": "Mehedi Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/zm6LHwz/7-Mehedi-Hasan.jpg",
+      "role": "All-rounder",
+      "batting": "Right-Hand-Bat",
+      "bowling": "Right-Arm-Off-Break",
+      "price": 450000
+    },
+    {
+      "player_id": 8,
+      "name": "Hasan Mahmud",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/sQ4fjQc/8-Hasan-Mahmud.jpg",
+      "role": "Bowler",
+      "batting": "Right-Hand-Bat",
+      "bowling": "Right-Arm-Fast",
+      "price": 350000
+    },
+    {
+      "player_id": 9,
+      "name": "Taskin Ahmed",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/cTwqqNt/9-Taskin-Ahmed.jpg",
+      "role": "Bowler",
+      "batting": "Left-Hand-Bat",
+      "bowling": "Right-Arm-Fast",
+      "price": 400000
+    },
+    {
+      "player_id": 10,
+      "name": "Mustafizur Rahman",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/JB3SQs1/10-Mustafizur-Rahman.jpg",
+      "role": "Bowler",
+      "batting": "Left-Hand-Bat",
+      "bowling": "Left-Arm-Fast",
+      "price": 400000
+    },
+    {
+      "player_id": 11,
+      "name": "Saifuddin",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/QNdtmmp/11-Saifuddin.jpg",
+      "role": "All-rounder",
+      "batting": "Right-Hand-Bat",
+      "bowling": "Right-Arm-Med",
+      "price": 350000
+    },
+    {
+      "player_id": 12,
+      "name": "Tanzim Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/10DGMWL/12-Tanzim.jpg",
+      "role": "Bowler",
+      "batting": "Right-Hand-Bat",
+      "bowling": "Right-Arm-Fast",
+      "price": 350000
+    }
+  ]
+  
