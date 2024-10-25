@@ -61,7 +61,7 @@ function App() {
       {current ? (
         <Players handleSelected={handleSelected}></Players>
       ) : (
-        <Selects selected={selected} handleDelete={handleDelete}></Selects>
+        <Selects selected={selected} handleDelete={handleDelete} handleCurrent={handleCurrent}></Selects>
       )}
       {/* <Players handleSelected={handleSelected}></Players>
       <Selects selected={selected} handleDelete={handleDelete}></Selects> */}

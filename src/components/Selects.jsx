@@ -1,6 +1,6 @@
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
-const Selects = ({ selected, handleDelete }) => {
+const Selects = ({ selected, handleDelete, handleCurrent }) => {
   return (
     <div className="w-11/12 mx-auto mb-20">
       <h1 className="text-4xl font-bold mb-5">
@@ -31,7 +31,12 @@ const Selects = ({ selected, handleDelete }) => {
         </div>
       ))}
 
-      <button className="btn btn-primary mt-5">Add More Players</button>
+      <button
+        onClick={() => handleCurrent("available")}
+        className="btn btn-primary mt-5"
+      >
+        Add More Players
+      </button>
     </div>
   );
 };
