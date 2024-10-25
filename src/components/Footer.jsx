@@ -26,9 +26,9 @@ const Footer = () => {
           <p className="mb-4">
             Subscribe to our newsletter for the latest updates.
           </p>
-          <div className="flex border rounded-lg">
+          <div className="lg:flex Lg:border rounded-lg">
             <input
-              className="rounded-l-lg pl-2"
+              className="lg:rounded-l-lg pl-2"
               type="text"
               name=""
               id=""

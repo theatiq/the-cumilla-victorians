@@ -12,7 +12,7 @@ const Players = () => {
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="text-4xl font-bold mb-5">Available Players</h1>
-      <div className="grid grid-cols-3 gap-5 mb-20">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-5 mb-20">
         {players.map((player) => (
           // eslint-disable-next-line react/jsx-key
           <div className="card border rounded-lg">
