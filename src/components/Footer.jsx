@@ -32,7 +32,7 @@ const Footer = () => {
               type="text"
               placeholder="Enter your email"
             />
-            <button className="btn border-none sm:rounded-lg lg:rounded-none lg:rounded-r-lg bg-blue-500 ">
+            <button className="btn border-none sm:rounded-lg lg:rounded-none lg:rounded-r-lg btn-secondary ">
               Subscribe
             </button>
           </div>

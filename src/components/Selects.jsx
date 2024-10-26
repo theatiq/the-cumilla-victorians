@@ -26,7 +26,7 @@ const Selects = ({ selected, handleDelete, handleCurrent, playerRemoved }) => {
             onClick={() => {
               handleDelete(player), playerRemoved(player.name);
             }}
-            className="text-red-300 text-xl cursor-pointer"
+            className="text-pink-300 text-xl cursor-pointer"
           >
             <RiDeleteBin6Fill />
           </div>
@@ -35,7 +35,7 @@ const Selects = ({ selected, handleDelete, handleCurrent, playerRemoved }) => {
 
       <button
         onClick={() => handleCurrent("available")}
-        className="btn bg-yellow-400 mt-5 text-xl"
+        className="btn btn-secondary mt-5 text-xl"
       >
         Add More Players
       </button>

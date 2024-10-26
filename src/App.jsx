@@ -70,7 +70,7 @@ function App() {
       <ToastContainer />
       <Header coin={coin}></Header>
       <Banner totalCoin={totalCoin}></Banner>
-      <Buttons handleCurrent={handleCurrent} selected={selected}></Buttons>
+      <Buttons handleCurrent={handleCurrent} selected={selected} current={current}></Buttons>
       {current ? (
         <Players handleSelected={handleSelected}></Players>
       ) : (

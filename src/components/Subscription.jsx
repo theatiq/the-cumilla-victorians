@@ -27,7 +27,7 @@ const Subscription = () => {
                 type="text"
                 placeholder="Enter your email"
               />
-              <button className="btn">Subscribe</button>
+              <button className="btn btn-secondary">Subscribe</button>
             </div>
           </div>
         </div>
