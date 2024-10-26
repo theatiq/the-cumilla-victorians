@@ -15,6 +15,9 @@ function App() {
   const [selected, setSelected] = useState([]);
 
   const notify = () => toast.success("1000000 Free Coins Added !");
+  const warning = () => toast.error("Not enough coin, please add.");
+  const congrats = () => toast.success("Congrats! Player added.");
+  const alreadyAdded = () => toast.error("This Player already added.");
 
   const handleCurrent = (status) => {
     if (status === "available") {
@@ -33,14 +36,16 @@ function App() {
   const handleSelected = (player) => {
     const isExist = selected.find((p) => p.player_id === player.player_id);
     if (isExist) {
-      alert("Already Selected");
+      return alreadyAdded();
     } else {
       const newlySelected = [...selected, player];
+
       if (coin >= player.price) {
         const remainingCoin = coin - player.price;
         setCoin(remainingCoin);
+        congrats();
       } else {
-        return alert("Please Credit Coin");
+        return warning();
       }
 
       if (selected.length > 5) {
@@ -49,6 +54,7 @@ function App() {
         return setSelected(newlySelected);
       }
     }
+    congrats();
   };
 
   const handleDelete = (player) => {
