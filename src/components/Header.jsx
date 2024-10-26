@@ -3,7 +3,7 @@ import { AiOutlineDollar } from "react-icons/ai";
 const Header = ({ coin }) => {
   return (
     <div className="w-12/12 mx-auto sticky top-0 bg-gray-300 z-50  opacity-80">
-      <div className="navbar flex items-center mb-2 px-10">
+      <div className="lg:flex items-center mb-5 px-10">
         <div className="flex-1">
           <img src={logo} alt="" />
         </div>

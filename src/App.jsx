@@ -6,11 +6,15 @@ import Header from "./components/Header";
 import Players from "./components/Players";
 import Selects from "./components/Selects";
 import Subscription from "./components/Subscription";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [coin, setCoin] = useState(0);
   const [current, setCurrent] = useState(true);
   const [selected, setSelected] = useState([]);
+
+  const notify = () => toast.success("1000000 Free Coins Added !");
 
   const handleCurrent = (status) => {
     if (status === "available") {
@@ -23,7 +27,7 @@ function App() {
   const totalCoin = () => {
     const newCoin = coin + 1000000;
     setCoin(newCoin);
-    console.log(coin);
+    notify();
   };
 
   const handleSelected = (player) => {
@@ -52,16 +56,23 @@ function App() {
       (p) => p.player_id !== player.player_id
     );
     setSelected(remainingPlayer);
+    const newBalance = coin + player.price;
+    setCoin(newBalance);
   };
   return (
     <div>
+      <ToastContainer />
       <Header coin={coin}></Header>
       <Banner totalCoin={totalCoin}></Banner>
       <Buttons handleCurrent={handleCurrent} selected={selected}></Buttons>
       {current ? (
         <Players handleSelected={handleSelected}></Players>
       ) : (
-        <Selects selected={selected} handleDelete={handleDelete} handleCurrent={handleCurrent}></Selects>
+        <Selects
+          selected={selected}
+          handleDelete={handleDelete}
+          handleCurrent={handleCurrent}
+        ></Selects>
       )}
       {/* <Players handleSelected={handleSelected}></Players>
       <Selects selected={selected} handleDelete={handleDelete}></Selects> */}
