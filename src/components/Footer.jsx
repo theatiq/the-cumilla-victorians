@@ -26,15 +26,15 @@ const Footer = () => {
           <p className="mb-4">
             Subscribe to our newsletter for the latest updates.
           </p>
-          <div className="lg:flex Lg:border rounded-lg">
+          <div className="lg:flex">
             <input
-              className="lg:rounded-l-lg pl-2"
+              className="lg:rounded-l-lg pl-5"
               type="text"
-              name=""
-              id=""
               placeholder="Enter your email"
             />
-            <button>Subscribe</button>
+            <button className="btn border-none sm:rounded-lg lg:rounded-none lg:rounded-r-lg bg-blue-500 ">
+              Subscribe
+            </button>
           </div>
         </nav>
       </footer>

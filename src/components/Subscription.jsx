@@ -22,8 +22,12 @@ const Subscription = () => {
               Get the latest updates and news right in your inbox!
             </p>
             <div className="flex justify-center gap-5">
-              <input type="text" placeholder="Enter your email" />
-              <button className="btn btn-primary">Subscribe</button>
+              <input
+                className="rounded-lg px-5"
+                type="text"
+                placeholder="Enter your email"
+              />
+              <button className="btn">Subscribe</button>
             </div>
           </div>
         </div>

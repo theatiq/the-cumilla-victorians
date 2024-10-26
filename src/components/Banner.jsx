@@ -17,7 +17,7 @@ const Banner = ({ totalCoin }) => {
               Assemble Your Ultimate Dream 11 Cricket Team
             </h1>
             <p className="mb-5 text-xl">Beyond Boundaries Beyond Limits</p>
-            <button onClick={() => totalCoin()} className="btn btn-primary">
+            <button onClick={() => totalCoin()} className="btn btn-secondary">
               Claim Free Credit
             </button>
           </div>

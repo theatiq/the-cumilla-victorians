@@ -35,7 +35,7 @@ const Selects = ({ selected, handleDelete, handleCurrent, playerRemoved }) => {
 
       <button
         onClick={() => handleCurrent("available")}
-        className="btn btn-primary mt-5"
+        className="btn bg-yellow-400 mt-5 text-xl"
       >
         Add More Players
       </button>

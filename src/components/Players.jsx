@@ -45,7 +45,7 @@ const Players = ({ handleSelected }) => {
                 <p>Price: ${player.price} </p>
                 <button
                   onClick={() => handleSelected(player)}
-                  className="btn btn-primary"
+                  className="btn bg-pink-200"
                 >
                   Choose Player
                 </button>
