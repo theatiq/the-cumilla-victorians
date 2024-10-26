@@ -16,8 +16,10 @@ function App() {
 
   const notify = () => toast.success("1000000 Free Coins Added !");
   const warning = () => toast.error("Not enough coin, please add.");
-  const congrats = () => toast.success("Congrats! Player added.");
-  const alreadyAdded = () => toast.error("This Player already added.");
+  const congrats = (player) => toast.success(`Congrats! ${player} added.`);
+  const alreadyAdded = (player) => toast.error(`${player} already added.`);
+  const playerRemoved = (player) => toast.warn(`${player} removed.`);
+  const maxSelected = () => toast.error("Maximum players already added.");
 
   const handleCurrent = (status) => {
     if (status === "available") {
@@ -36,25 +38,23 @@ function App() {
   const handleSelected = (player) => {
     const isExist = selected.find((p) => p.player_id === player.player_id);
     if (isExist) {
-      return alreadyAdded();
-    } else {
-      const newlySelected = [...selected, player];
-
-      if (coin >= player.price) {
-        const remainingCoin = coin - player.price;
-        setCoin(remainingCoin);
-        congrats();
-      } else {
-        return warning();
-      }
-
-      if (selected.length > 5) {
-        alert("You have already selected maximum number of players");
-      } else {
-        return setSelected(newlySelected);
-      }
+      return alreadyAdded(player.name);
     }
-    congrats();
+
+    if (coin < player.price) {
+      return warning();
+    }
+
+    if (selected.length >= 6) {
+      return maxSelected();
+    }
+
+    const remainingCoin = coin - player.price;
+    setCoin(remainingCoin);
+
+    const newlySelected = [...selected, player];
+    setSelected(newlySelected);
+    congrats(player.name);
   };
 
   const handleDelete = (player) => {
@@ -78,10 +78,9 @@ function App() {
           selected={selected}
           handleDelete={handleDelete}
           handleCurrent={handleCurrent}
+          playerRemoved={playerRemoved}
         ></Selects>
       )}
-      {/* <Players handleSelected={handleSelected}></Players>
-      <Selects selected={selected} handleDelete={handleDelete}></Selects> */}
       <Subscription></Subscription>
       <Footer></Footer>
     </div>

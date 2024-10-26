@@ -108,3 +108,28 @@ export default Players;
   <RiDeleteBin6Fill />
 </div>
 </div>
+
+
+
+// functionality
+const handleSelected = (player) => {
+  const isExist = selected.find((p) => p.player_id === player.player_id);
+  if (isExist) {
+    return alreadyAdded(player.name);
+  } else {
+    const newlySelected = [...selected, player];
+
+    if (coin >= player.price) {
+      const remainingCoin = coin - player.price;
+      setCoin(remainingCoin);
+    } else {
+      return warning();
+    }
+
+    if (selected.length < 6) {
+      congrats(player.name);
+      return setSelected(newlySelected);
+    } else {
+      return maxSelected();
+    }
+  }

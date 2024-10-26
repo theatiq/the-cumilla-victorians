@@ -1,6 +1,6 @@
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
-const Selects = ({ selected, handleDelete, handleCurrent }) => {
+const Selects = ({ selected, handleDelete, handleCurrent, playerRemoved }) => {
   return (
     <div className="w-11/12 mx-auto mb-20">
       <h1 className="text-4xl font-bold mb-5">
@@ -23,7 +23,9 @@ const Selects = ({ selected, handleDelete, handleCurrent }) => {
             </div>
           </div>
           <div
-            onClick={() => handleDelete(player)}
+            onClick={() => {
+              handleDelete(player), playerRemoved(player.name);
+            }}
             className="text-red-300 text-xl cursor-pointer"
           >
             <RiDeleteBin6Fill />
