@@ -1,7 +1,7 @@
 1. My Project:
     Name        : "Cumilla Victorians" hosted at Surge.
     Live Link   : "feeble-mountain.surge.sh"
-    Github Repo : "https://github.com/programming-hero-web-course1/b10a7-dream-11-theatiq"
+    Github Repo : "https://github.com/theatiq/the-cumilla-victorians"
 
 2. A brief description:
     This is Player Selection platform to build a cricket team. You can choose your desired player from wide range of player as per your capacity.
